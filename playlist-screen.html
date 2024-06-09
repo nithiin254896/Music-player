@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Music Player</title>
+    <script
+      src="https://kit.fontawesome.com/12a41c30dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="playlist-screen.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div id="logo">
+        <img src="./assets/header/header-logo.jpg" />
+      </div>
+      <p>Favourites</p>
+
+      <div class="search-container">
+        <button type="submit" class="search-button">
+          <i class="fa fa-search"></i>
+        </button>
+        <input type="text" placeholder="Search" class="search-input" />
+        <button class="voice-button" style="cursor: pointer">
+          <i class="fa fa-microphone"></i>
+        </button>
+      </div>
+
+      <div class="bell-container">
+        <span class="bell-icon">
+          <i class="fa fa-bell"></i>
+          <span class="notification"></span>
+        </span>
+      </div>
+
+      <div class="profile">
+        <img src="./assets/header/profile.jpg" />
+      </div>
+    </header>
+
+    <!--Main Section-->
+    <main>
+      <!--Artist Template-->
+      <div id="artist-template">
+        <div id="artist-image">
+          <img src="assets/song-img/tove.jpg" alt="" />
+        </div>
+        <!--Artist Details
+      >-->
+        <div id="artist-details">
+          <!--Artist Title-->
+          <div id="artist-title">
+            <div>
+              <b>Tove Styrke</b>
+              <br />
+              <artist-type>Pop Artist</artist-type>
+            </div>
+            <followers>96.7k followers</followers>
+          </div>
+          <!--End of Artist Title-->
+          <!--Artist Intro-->
+          <div id="artist-intro">
+            Swedish pop star Tove Styrke is during fall ‘20 part of successful
+            music TV-show ”Så Mycket Bättre” where she is doing some covers of
+            other Swedish artists. She is now also working hard in the studio
+            preparing for releasing her first new original music in a few years
+            during first part of ‘21.
+          </div>
+          <!--End of Artist Intro-->
+          <!--Miscellaneous Buttons-->
+          <div id="artist-buttons">
+            <div id="playall-button">Play All</div>
+            <div id="follow-button">Follow</div>
+          </div>
+          <div id="tracks">247 Tracks | 128 Albums</div>
+          <!--End of miscellaeous buttons-->
+        </div>
+        <!--End of artist details-->
+      </div>
+      <!--End of artist template-->
+
+      <!--Begining of artist songs-->
+      <div id="artist-songs">
+        <!--Song 1-->
+        <div id="song">
+          <div id="song-number">
+            01
+            <img src="./assets/song-img/blank space.jpg" alt="album image" />
+            <div id="song-details">
+              Sway
+              <br />
+              <author>Tove Styrke</author>
+            </div>
+          </div>
+
+          <div id="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!--End of Song 1-->
+        <!--Song 2-->
+        <div id="song">
+          <div id="song-number">
+            02
+            <img src="./assets/song-img/Blue-Eyes.jpg" alt="album image" />
+            <div id="song-details">
+              Mistakes
+              <br />
+              <author>Tove Styrke</author>
+            </div>
+          </div>
+
+          <div id="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!--End of Song 2-->
+        <!--Song 3-->
+        <div id="song">
+          <div id="song-number">
+            03
+            <img
+              src="./assets/song-img/Call Me By Your Name.jpg"
+              alt="album image"
+            />
+            <div id="song-details">
+              Say My Name
+              <br />
+              <author>Tove Styrke</author>
+            </div>
+          </div>
+
+          <div id="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!--End of Song 3-->
+        <!--Song 4-->
+        <div id="song">
+          <div id="song-number">
+            04
+            <img src="./assets/song-img/closer.jpg" alt="album image" />
+            <div id="song-details">
+              Closer
+              <br />
+              <author>Tove Styrke</author>
+            </div>
+          </div>
+
+          <div id="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!--End of Song 4-->
+        <!--Song 5-->
+        <div id="song">
+          <div id="song-number">
+            05
+            <img src="./assets/song-img/desi-kalakaar.jpg" alt="album image" />
+            <div id="song-details">
+              Desi kalakaar
+              <br />
+              <author>Tove Styrke</author>
+            </div>
+          </div>
+
+          <div id="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!--End of Song 5-->
+        <!--Song 6-->
+        <div id="song">
+          <div id="song-number">
+            06
+            <img src="./assets/song-img/dheere-dheere.jpg" alt="album image" />
+            <div id="song-details">
+              dheere-dheere
+              <br />
+              <author>Tove Styrke</author>
+            </div>
+          </div>
+
+          <div id="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <!--End of Song 6-->
+        <!--Song 7-->
+        <div id="song">
+          <div id="song-number">
+            07
+            <img src="./assets/song-img/driving slow.jpg" alt="album image" />
+            <div id="song-details">
+              Vibe
+              <br />
+              <author>Tove Styrke</author>
+            </div>
+          </div>
+
+          <div id="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <!--End of Song 7-->
+    </main>
+    <!--End of main section-->
+
+    <!--Begining of Aside Section-->
+    <aside>
+      <div id="aside-header-1">
+        Similar Artists
+        <x>View All</x>
+      </div>
+      <!--Similar artist-->
+      <div id="similar-artist">
+        <div id="artist-img">
+          <img src="./assets/song-img/Taylor.jpg" alt="" />
+        </div>
+        <div id="song-details">
+          Taylor Swift
+          <br />
+          <author>Pop Artist</author>
+        </div>
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+
+      <div id="similar-artist">
+        <div id="artist-img">
+          <img src="./assets/song-img/Taylor.jpg" alt="" />
+        </div>
+        <div id="song-details">
+          Taylor Swift
+          <br />
+          <author>Pop Artist</author>
+        </div>
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+
+      <div id="similar-artist">
+        <div id="artist-img">
+          <img src="./assets/song-img/Taylor.jpg" alt="" />
+        </div>
+        <div id="song-details">
+          Taylor Swift
+          <br />
+          <author>Pop Artist</author>
+        </div>
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+      <!--End of Similar artist-->
+      <div id="aside-header-2">
+        Recently Played
+        <x>View All</x>
+      </div>
+      <!--Recently Played Songs-->
+      <!--Song 1-->
+      <div id="song">
+        <div id="song-number">
+          01
+          <img src="./assets/song-img/End Game.jpg" alt="album image" />
+          <div id="song-details">
+            End Game
+            <br />
+            <author>Tove Styrke</author>
+          </div>
+        </div>
+
+        <div id="icons">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <!--ENd of song 1-->
+      <!--Song 2-->
+      <div id="song">
+        <div id="song-number">
+          02
+          <img src="./assets/song-img/I'm a Mess.jpg" alt="album image" />
+          <div id="song-details">
+            I'm a Mess
+            <br />
+            <author>Tove Styrke</author>
+          </div>
+        </div>
+
+        <div id="icons">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <!--End of song 2-->
+      <!--Song 3-->
+      <div id="song">
+        <div id="song-number">
+          03
+          <img
+            src="./assets/song-img/Look What You Made Me Do.jpg"
+            alt="album image"
+          />
+          <div id="song-details">
+            Say My Name
+            <br />
+            <author>Tove Styrke</author>
+          </div>
+        </div>
+
+        <div id="icons">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <!--End of song 3-->
+      <!--Song 4-->
+      <div id="song">
+        <div id="song-number">
+          04
+          <img src="./assets/song-img/love-dose.jpg" alt="album image" />
+          <div id="song-details">
+            On The Low
+            <br />
+            <author>Tove Styrke</author>
+          </div>
+        </div>
+
+        <div id="icons">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <!--End of song 4-->
+      <!--Song 5-->
+      <div id="song">
+        <div id="song-number">
+          05
+          <img src="./assets/song-img/shapeOfYou.jpg" alt="album image" />
+          <div id="song-details">
+            Shape of You
+            <br />
+            <author>Tove Styrke</author>
+          </div>
+        </div>
+
+        <div id="icons">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <!--End of song 5-->
+      <!--End of recently played songs-->
+    </aside>
+    <!--End of aside-->
+
+    <!--Begining of footer section-->
+    <footer>
+      <!--The bottom music bar which pops up when we play a music-->
+      <div id="music-bar">
+        <!--Music Icon-->
+        <div id="music-icon">
+          <img src="assets/latest-release/heatwaves.jpg" alt="music-icon" />
+        </div>
+        <!--End of music icon-->
+        <!--Music title-->
+        <div id="music-title">
+          <b>evermore (feat. Bon Iver)</b>
+          <div id="favourite">
+            <i class="far fa-heart"></i>
+          </div>
+          <div id="remove">
+            <i class="fas fa-ban"></i>
+          </div>
+          <br />
+          <artist>Taylor Swift</artist>
+        </div>
+        <!--End of music title-->
+        <!--Play buttons-->
+        <div id="play-buttons">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-backward"></i>
+          <i class="fas fa-pause-circle"></i>
+          <i class="fas fa-forward"></i>
+          <i class="fas fa-undo-alt"></i>
+        </div>
+        <!--End of play buttons-->
+        <!--Music start time-->
+        <div id="start-time">0:00</div>
+        <!--End of music start time-->
+        <!--Music end time-->
+        <div id="end-time">5:04</div>
+        <!--End of music end time-->
+        <!--Begining of the progress bar-->
+        <div id="progress-bar">
+          <div id="circle">
+            <i class="fas fa-circle"></i>
+          </div>
+        </div>
+        <!--End of progress bar-->
+        <!--Miscellaneous icons-->
+        <div id="queue">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div id="volume">
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div id="progress-bar-volume">
+          <div id="circle-volume">
+            <i class="fas fa-circle"></i>
+          </div>
+        </div>
+        <!--End of miscellaneous icons-->
+      </div>
+      <!--End of music bar-->
+    </footer>
+    <!--End of footer section-->
+  </body>
+  <!--End of body section-->
+</html>
+<!--End of html code-->

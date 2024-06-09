@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Music Player</title>
+    <script
+      src="https://kit.fontawesome.com/12a41c30dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div id="logo">
+        <img src="./assets/header/header-logo.jpg" />
+      </div>
+      <p>Favourites</p>
+
+      <div class="search-container">
+        <button type="submit" class="search-button">
+          <i class="fa fa-search"></i>
+        </button>
+        <input type="text" placeholder="Search" class="search-input" />
+        <button class="voice-button" style="cursor: pointer">
+          <i class="fa fa-microphone"></i>
+        </button>
+      </div>
+
+      <div class="bell-container">
+        <span class="bell-icon">
+          <i class="fa fa-bell"></i>
+          <span class="notification"></span>
+        </span>
+      </div>
+
+      <div class="profile">
+        <img src="./assets/header/profile.jpg" />
+      </div>
+    </header>
+
+  <main>
+    <aside class="aside section-1">
+        <!-- Banner Section -->
+        <section class="container">
+          <div class="box banner-left">
+            <img src="./assets/banner/banner-3.jpg" alt="Banner-1" />
+          </div>
+          <div class="box banner-main" style="z-index: 1">
+            <img src="./assets/banner/banner-main.png" alt="Banner-3" />
+          </div>
+          <div class="box">
+            <img src="./assets/banner/banner-2.jpg" alt="Banner-2" />
+          </div>
+        </section>
+
+        <section class="latest-releases">
+          <h1 class="heading-text">Latest Releases</h1>
+
+          <div class="card">
+            <figure>
+              <a href="playlist-screen.html">
+                <img src="./assets/latest-release/one-direction.jpg" alt="" />
+              </a>
+              <figcaption class="song-info">
+                <h2>One diection</h2>
+                <p>NOV 14, 2014</p>
+              </figcaption>
+            </figure>
+            <div class="options">
+              <input type="checkbox" name="" id="" hidden />
+              <label><i class="fa-solid fa-ellipsis"></i></label>
+              <p>4:44</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <a href="playlist-screen.html">
+                <img
+                  src="./assets/latest-release/something just like this.jpg"
+                  alt=""
+                />
+              </a>
+              <figcaption class="song-info">
+                <h2>Something</h2>
+                <p>FEB 22, 2017</p>
+              </figcaption>
+            </figure>
+            <div class="options">
+              <input type="checkbox" name="" id="" hidden />
+              <label><i class="fa-solid fa-ellipsis"></i></label>
+              <p>4:44</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <a href="playlist-screen.html">
+                <img src="./assets/latest-release/heatwaves.jpg" alt="" />
+              </a>
+
+              <figcaption class="song-info">
+                <h2>Heat waves</h2>
+                <p>AUG 2, 2019</p>
+              </figcaption>
+            </figure>
+            <div class="options">
+              <input type="checkbox" name="" id="" hidden />
+              <label><i class="fa-solid fa-ellipsis"></i></label>
+              <p>4:44</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <a href="playlist-screen.html">
+                <img src="./assets/latest-release/weekend.webp" alt="" />
+              </a>
+
+              <figcaption class="song-info">
+                <h2>Weekend</h2>
+                <p>SEP 5, 2020</p>
+              </figcaption>
+            </figure>
+            <div class="options">
+              <input type="checkbox" name="" id="" hidden />
+              <label><i class="fa-solid fa-ellipsis"></i></label>
+              <p>4:44</p>
+            </div>
+          </div>
+        </section>
+        <!--           Popular Artists         -->
+        <section class="popular-artists">
+          <h1 class="heading-text">Popular Artists</h1>
+          <div class="popular-artist-content">
+            <figure>
+              <a href="playlist-screen.html">
+                <img src="./assets/artist/Ed-sheeran.webp" alt="" />
+              </a>
+                <figcaption>Ed Shreen</figcaption>
+              
+            </figure>
+            <figure>
+              <a href="playlist-screen.html">
+                <img src="./assets/artist/Coldplay.jpg" alt="" />
+              </a>
+                <figcaption>ColdPlay</figcaption>
+            </figure>
+            <figure>
+              <a href="playlist-screen.html">
+                <img src="./assets/artist/Zayn.jpg" alt="" />
+              </a>
+                <figcaption>Zyan Mallik</figcaption>
+            </figure>
+            <figure>
+              <a href="playlist-screen.html">
+                <img src="./assets/artist/Charlie.jpg" alt="" />
+              </a>
+                <figcaption>Charlie Puth</figcaption>
+            </figure>
+            <figure>
+              <a href="playlist-screen.html">
+                <img src="./assets/artist/imagine.jpeg" alt="" />
+              </a>
+                <figcaption>Imagine Dragon</figcaption>
+            </figure>
+            <figure>
+              <a href="playlist-screen.html">
+                <img src="./assets/artist/bruno.jpg" alt="" />
+              </a>
+                <figcaption>Bruno Mars</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="display-container">
+          <div class="music-station">
+            <img
+              src="./assets/Music_station/music-station.jpg"
+              id="mus-sta-fig"
+            />
+            <div class="music-mood">
+              <a href=""
+                ><img
+                  src="./assets/Music_station/love.jpg"
+                  alt=""
+                /></a>
+                <p>Love</p>
+            </div>
+            <div class="music-mood">
+              <a href=""
+                ><img
+                  src="./assets/Music_station/retro.jpg"
+                  alt=""
+                /></a>
+                <p>Retro</p>
+            </div>
+            <div class="music-mood">
+              <a href=""
+                ><img
+                  src="./assets/Music_station/chill.jpg"
+                  alt=""
+                /></a>
+                <p>Chill</p>
+            </div>
+            <div class="music-mood">
+              <a href=""
+                ><img
+                  src="./assets/Music_station/workout.jpg"
+                  alt=""
+                />
+              </a>
+                <p>Workout</p>
+            </div>
+            <div class="music-mood">
+              <a href=""
+                ><img
+                  src="./assets/Music_station/rock.jpg"
+                  alt=""
+                />
+              </a>
+                <p>Rock</p>
+            </div>
+            <div class="music-mood">
+              <a href=""
+                ><img
+                  src="./assets/Music_station/pop.jpeg"
+                  alt=""
+                />
+                </a>
+                <p>Pop</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-music-station">
+          <figure>
+            <img src="./assets/Music_station/party.jpg" />
+            <p>Party</p>
+          </figure>
+          <figure>
+            <img src="./assets/Music_station/electronic.jpg" />
+            <p>Electronic</p>
+          </figure>
+          <figure>
+            <img src="./assets/Music_station/roadtrip.jpg" />
+            <p>Road Trip</p>
+          </figure>
+        </section>
+
+        <section class="latest-songs" id="latest-english">
+          <h1 class="heading-text">Latest English</h1>
+          <div class="latest-song-div">
+            <figure>
+              <img src="./assets/Latest English/paradise.jpg" alt="" />
+              <figcaption class="">
+                <h5>Paradise</h5>
+                <h6>SEP 11, 2011</h6>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/Latest English/divide.jpg" alt="" />
+              <figcaption class="">
+                <h5>Divide</h5>
+                <h6>MAR 3, 2017</h6>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/Latest English/Instagram.jpg" alt="" />
+              <figcaption class="">
+                <h5>Instagram</h5>
+                <h6>JUL 5, 2019</h6>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/Latest English/Trampoloine.jpg" alt="" />
+              <figcaption class="">
+                <h5>Trampoline</h5>
+                <h6>SEP 26, 2019</h6>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src=".//assets/Latest English/stay.jpg" alt="" />
+              <figcaption class="">
+                <h5>Stay</h5>
+                <h6>JUL 9, 2021</h6>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="latest-songs" id="latest-telugu">
+          <h1 class="heading-text">Latest Telugu</h1>
+          <div class="latest-song-div">
+            <figure>
+              <img src="./assets/latest telugu/Dum masala.jpg" alt="" />
+              <figcaption class="">
+                <h5>Dum masala</h5>
+                <h6>SEP 11, 2011</h6>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/latest telugu/Nandanandanaa.jpg" alt="" />
+              <figcaption class="">
+                <h5>Nandanandanaa</h5>
+                <h6>MAR 3, 2017</h6>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/latest telugu/Odiyamma.jpg" alt="" />
+              <figcaption class="">
+                <h5>Odiyamma</h5>
+                <h6>JUL 5, 2019</h6>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/latest telugu/Proud'se Single.jpg" alt="" />
+              <figcaption class="">
+                <h5>Proud'se Single</h5>
+                <h6>SEP 26, 2019</h6>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/latest telugu/needhele.jpg" alt="" />
+              <figcaption class="">
+                <h5>Needhele</h5>
+                <h6>JUL 9, 2021</h6>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+    <div class="playlist">
+      <div id="Playlist-header">
+        <h1>My Playlist</h1>
+        <h4>
+          <select>
+            <option value="">Queue</option>
+            <option value="">Playlist</option>
+          </select>
+        </h4>
+
+        <div class="song-container">
+          <p class="index">01</p>
+          <img src="./assets/playlist/Beliver.jpg"">
+          <div class="song-info">
+            <p>Believer</p>
+            <p>Imagine Dragons</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">02</p>
+          <img src="assets/playlist/In the end.jpg" alt="">
+          <div class="song-info">
+            <p>In the end</p>
+            <p>Linkin Park</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">03</p>
+          <img src="assets/playlist/levitating.jpg" alt="">
+          <div class="song-info">
+            <p>Levitating</p>
+            <p>Dua Lipa</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">04</p>
+          <img src="assets/playlist/arcade.jpg" alt="">
+          <div class="song-info">
+            <p>Arcade</p>
+            <p>Duncan Laurence</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">05</p>
+          <img src="assets/playlist/maya.jpg" alt="">
+          <div class="song-info">
+            <p>Maya</p>
+            <p>Chowraasta</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">06</p>
+          <img src="assets/playlist/Theme_of_3.jpg" alt="">
+          <div class="song-info">
+            <p>Theme of 3o</p>
+            <p>Anirudh Ravichander</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">07</p>
+          <img src="assets/playlist/Kutti_Story.jpg" alt="">
+          <div class="song-info">
+            <p>Kutti Story</p>
+            <p>Anirudh Ravichander</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">08</p>
+          <img src="assets/playlist/Cover_me.jpg" alt="">
+          <div class="song-info">
+            <p>Cover Me In Sunshine</p>
+            <p>Pink</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">09</p>
+          <img src="assets/playlist/safari.jpg" alt="">
+          <div class="song-info">
+            <p>Safari</p>
+            <p>Serena</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">10</p>
+          <img src="assets/playlist/Closer.jpg" alt="">
+          <div class="song-info">
+            <p>Closer</p>
+            <p>The Chainsmokers</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">11</p>
+          <img src="assets/playlist/X.jpg" alt="">
+          <div class="song-info">
+            <p>Photograph</p>
+            <p>Ed Sheeran</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">12</p>
+          <img src="assets/playlist/Wavin.jpg" alt="">
+          <div class="song-info">
+            <p>Wavin'Flag</p>
+            <p>K'NAAN</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">13</p>
+          <img src="assets/playlist/Million.jpg" alt="">
+          <div class="song-info">
+            <p>Million Years</p>
+            <p>HUTS,LUNAX,Jerome</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">14</p>
+          <img src="assets/playlist/Shadow.jpg" alt="">
+          <div class="song-info">
+            <p>Shadow Preachers</p>
+            <p>Zella Day</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">15</p>
+          <img src="assets/playlist/Mirrors.jpg" alt="">
+          <div class="song-info">
+            <p>Mirrors</p>
+            <p>Justin Timberlake</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">16</p>
+          <img src="assets/playlist/maate.jpg" alt="">
+          <div class="song-info">
+            <p>maate vinadhuga</p>
+            <p>Sid Sriram</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">17</p>
+          <img src="assets/playlist/Scare.jpg" alt="">
+          <div class="song-info">
+            <p>Scare Me</p>
+            <p>LUM!X,KSHMR</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="song-container">
+          <p class="index">18</p>
+          <img src="assets/playlist/Yalgaar.jpg" alt="">
+          <div class="song-info">
+            <p>Yalgaar</p>
+            <p>Ajey Nagar</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+    </aside>
+
+  <footer>
+    <div class="footer-container">
+      <div id="music-icon">
+       <img src="./assets/Latest English/Instagram.jpg" alt="music-icon">
+      </div>
+      <div id="music-title">
+        <b>Instagram</b>
+              <div id="favourite">
+           <i class="far fa-heart"></i>
+              </div>
+        <div id="remove">
+          <i class="fas fa-ban"></i>
+        </div>
+        <br/>
+        <artist id="music-player-title-artist">Dimitri Vegas & Like Mike</artist>
+      </div>
+      <div id="play-buttons">
+        <i class="fas fa-random"></i>
+        <i class="fas fa-backward"></i>
+        <i class="fas fa-pause-circle"></i>
+        <i class="fas fa-forward"></i>
+        <i class="fas fa-undo-alt"></i>
+      </div>
+      <!--End of play buttons-->
+      <!--Music start time-->
+        <div id="start-time">
+              0:00
+        </div>
+        <!--End of music start time-->
+        <!--Music end time-->
+        <div id="end-time">
+              5:04
+        </div>
+        <!--End of music end time-->
+        <!--Begining of the progress bar-->
+      <div id="progress-bar">
+           <div id="circle">
+             <i class="fas fa-circle"></i>
+          </div>
+      </div>
+      <!--End of progress bar-->
+      <!--Miscellaneous icons-->
+      <div id="queue">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div id="volume">
+        <i class="fas fa-volume-up"></i>
+      </div>
+      <div id="progress-bar-volume">
+        <div id="circle-volume">
+          <i class="fas fa-circle"></i>
+          </div>
+      </div>
+      <!--End of miscellaneous icons-->
+    </div>
+    <!--End of music bar-->
+    </div>
+  </footer>
+</body>
+</html>
